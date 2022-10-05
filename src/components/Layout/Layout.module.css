@@ -10,6 +10,7 @@ body{
     margin: 0 auto;
     padding-left: 1.4rem;
     padding-bottom: 2.2rem;
+    margin-top: 7rem;
 }
 
 .input{
@@ -45,6 +46,41 @@ body{
     font-size: 1.4rem;
 }
 
+.logout{
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    outline: none;
+    padding: 0.5rem;
+   border: 0.3rem solid white;
+   width: 15%;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: white;
+   background-color: #1e789c;
+}
+
+.logout:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1e789c;
+    transition: 0.3s ease-in;
+}
+
+
+@media(max-width:750px){
+.container{
+    max-width: 500px;
+    margin-top: 10rem;
+}
+
+.input{
+    width: 55%;
+}
+
+
+}
+
 
 
 @media(max-width:490px){
@@ -62,6 +98,10 @@ body{
 .button{
     margin-left: 0.5rem;
     padding: 0.2rem 1.2rem 0.4rem;
+}
+
+.logout{
+    width: 20%;
 }
 
 }

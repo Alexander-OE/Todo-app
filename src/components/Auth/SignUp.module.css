@@ -1,0 +1,97 @@
+.container {
+    border: 2px solid white;
+    background-color: white;
+    position: relative;
+    top: 3.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 3rem 2rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    /* box-shadow: to right black; */
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 1.2px solid black;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.btn {
+    width: 30%;
+    position: relative;
+    top: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(26, 192, 54);
+    color: white;
+}
+
+.login {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.demo {
+    width: 30%;
+    position: relative;
+    top: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    
+}
+
+.demo:hover{
+    cursor: pointer;
+    background-color: rgb(26, 192, 54);
+    color: white;
+}
+
+@media (max-width: 720px){
+  .container{
+    max-width: 300px;
+  }
+
+  .demo{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 720px){
+    .container{
+        max-width: 200px;
+    }
+
+    .btn{
+        padding-right: 4rem;
+    }
+
+    .demo{
+        padding-right: 4rem;
+    }
+}

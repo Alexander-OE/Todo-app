@@ -13,6 +13,8 @@ import {
   addDoc,
   deleteDoc,
 } from "firebase/firestore";
+import { signOut } from "firebase/auth";
+import { auth } from "../../firebase";
 
 const Layout = () => {
   const [todos, setTodos] = useState([]);
@@ -75,9 +77,22 @@ const Layout = () => {
     await deleteDoc(doc(db, "todos", id));
   };
 
+
+// Sign out
+
+const logOut = async () =>{
+  try {
+    await signOut(auth)
+    console.log("Signed out!");
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
   return (
     <div className={classes.box}>
       <div className={classes.container}>
+      <button onClick={logOut} className={classes.logout}>Sign Out</button>
         <h3 className={classes.heading}>Todo App</h3>
         <form action="" className={classes.form} onSubmit={createTodo}>
           <input
